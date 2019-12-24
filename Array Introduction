@@ -1,0 +1,27 @@
+/* An array is a series of elements of the same type placed in contiguous memory locations 
+that can be individually referenced by adding an index to a unique identifier. This problem is stated to 
+explain you how to declare an array, enter elements in an array, and print that array in reverse */
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int i,n,arr[999];
+    cin>>n;
+    for(i=0; i<n; i++)
+    {
+        cin>>arr[i];
+
+    }
+    for(i=n-1; i>=0; i--)
+    { 
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
